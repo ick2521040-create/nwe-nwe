@@ -122,11 +122,10 @@ img {
   overflow: hidden;
   background-color: #86ad62;
   background-image:
-    linear-gradient(90deg, rgba(20, 38, 22, 0.58) 0%, rgba(20, 38, 22, 0.18) 100%),
-    radial-gradient(ellipse at 75% 20%, rgba(255, 235, 166, 0.8) 0 8%, transparent 8.5%),
-    radial-gradient(ellipse at 72% 112%, #527944 0 26%, transparent 26.5%),
-    radial-gradient(ellipse at 10% 112%, #79994b 0 32%, transparent 32.5%),
-    linear-gradient(180deg, #9fc8df 0%, #d7e8bb 48%, #93b86b 100%);
+    linear-gradient(90deg, rgba(20, 38, 22, 0.78) 0%, rgba(20, 38, 22, 0.36) 58%, rgba(20, 38, 22, 0.12) 100%),
+    url("assets/japanese-pear.jpg");
+  background-position: center 52%;
+  background-size: cover;
   min-height: 720px;
   display: flex;
   align-items: center;
@@ -495,48 +494,22 @@ img {
 
 .pear-illustrations {
   position: relative;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  justify-items: center;
   min-height: 360px;
   margin: 0;
-  padding: 38px 26px 56px;
+  padding: 0;
   overflow: hidden;
   border: 5px solid #fff;
   border-radius: 42px 42px 42px 16px;
-  background:
-    radial-gradient(ellipse at 50% 100%, #d5e9b9 0 35%, transparent 35.5%),
-    linear-gradient(145deg, #fff4bf, #f8dca0);
+  background: #dfeac9;
   box-shadow: var(--shadow);
 }
 
-.pear-illustration {
-  display: grid;
-  place-items: center;
-  width: clamp(90px, 12vw, 150px);
-  aspect-ratio: 1;
-  border: 4px solid rgba(255, 255, 255, 0.9);
-  border-radius: 48% 52% 47% 53%;
-  background: #fffefa;
-  box-shadow: 0 14px 28px rgba(65, 77, 42, 0.16);
-}
-
-.pear-illustration .pear-art {
-  width: 84%;
-  height: 84%;
-}
-
-.pear-illustration-one {
-  transform: translateY(-14px) rotate(-8deg);
-}
-
-.pear-illustration-two {
-  transform: translateY(22px) rotate(7deg);
-}
-
-.pear-illustration-three {
-  transform: translateY(-4px) rotate(3deg);
+.pear-illustrations img {
+  display: block;
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  object-position: center 58%;
 }
 
 .pear-illustrations figcaption {
